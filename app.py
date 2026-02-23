@@ -14,18 +14,30 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+    /* Mobile  */
     .main-title {
-        font-size: 45px;
-        font-weight: bold;
-        color: #1E3A8A;
-        text-align: center;
-        margin-bottom: 0px;
+        font-size: 32px !important;
+        font-weight: bold !important;
+        color: #1E3A8A !important;
+        text-align: center !important;
+        margin-bottom: 0px !important;
+        line-height: 1.2 !important;
     }
     .sub-title {
-        font-size: 20px;
-        color: #6B7280;
-        text-align: center;
-        margin-bottom: 30px;
+        font-size: 16px !important;
+        color: #6B7280 !important;
+        text-align: center !important;
+        margin-bottom: 30px !important;
+        line-height: 1.4 !important;
+    }
+
+    @media (min-width: 768px) {
+        .main-title {
+            font-size: 52px !important;
+        }
+        .sub-title {
+            font-size: 22px !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
